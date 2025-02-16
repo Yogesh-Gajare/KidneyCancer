@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kidney Cancer Detection</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+
+    <nav>
+      <div class="logo">KIDNEY</div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="login.html">Logout</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="upload-section">
+      <h2>Upload</h2>
+      <p>Upload Dataset here. Don't Upload Image here.</p>
+      <form id="upload-form" enctype="multipart/form-data">
+        <input type="file" id="fileUpload" name="dataset" accept=".pdf" required>
+        <button type="submit">Upload</button>
+      </form>
+
+    </section>
+  </main>
+  
+  <script src="dataset.js"></script>
+</body>
+</html>

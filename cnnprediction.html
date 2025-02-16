@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kidney Cancer Detection - Prediction</title>
+  <link rel="stylesheet" href="cnnpredicts.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>KIDNEY</h1>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="data.html">Upload Data</a>
+        <a href="login.html">Logout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="prediction-section">
+      <h2>Uploaded Image</h2>
+
+      <!-- Placeholder for the uploaded image -->
+      <div class="image-container">
+        <img id="uploadedImage" src="" alt="Uploaded Image" style="max-width: 100%; height: 300px;">
+      </div>
+
+      <!-- Prediction Button -->
+      <button id="predictBtn">Get Prediction</button>
+
+      <div id="predictionResult" style="margin-top: 20px; display: none;">
+        <h3>Prediction Result:</h3>
+        <p id="predictionText">The result will be displayed here.</p>
+      </div>
+    </div>
+  </main>
+  
+  <script src="cnnprediction.js"></script> <!-- Link to the external JS file -->
+</body>
+</html>

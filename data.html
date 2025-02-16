@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidney Cancer Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        
+        <div class="container">
+            <h1>KIDNEY</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="upload.html">Upload</a></li>
+                    <li><a href="#">Performance_Analysis</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <h2>Kidney Cancer Detection</h2>
+        <form class="detection-form">
+            <div class="form-group">
+                <label for="age">AGE:</label>
+                <input type="text" id="age" placeholder="age">
+            </div>
+            <div class="form-group">
+                <label for="blood_pressure">BLOOD_PRESSURE:</label>
+                <input type="text" id="blood_pressure" placeholder="blood_pres">
+            </div>
+            <div class="form-group">
+                <label for="albumin">ALBUMIN:</label>
+                <select id="albumin">
+                    <option>Normal</option>
+                    <option>Low</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sugar">SUGAR:</label>
+                <input type="text" id="sugar" placeholder="sugar">
+            </div>
+            <div class="form-group">
+                <label for="red_blood_cells">RED_BLOOD_CELLS:</label>
+                <select id="red_blood_cells">
+                    <option>Normal</option>
+                    <option>Low</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pus_cell">PUS_CELL:</label>
+                <select id="pus_cell">
+                    <option>Present</option>
+                    <option>Absent</option>
+                </select>
+            </div>
+            <!-- Additional fields -->
+            <div class="form-group">
+                <label for="bacteria">BACTERIA:</label>
+                <select id="bacteria">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="blood_glucose">BLOOD_GLUCOSE_RANDOM:</label>
+                <input type="text" id="blood_glucose" placeholder="blood_gluc">
+            </div>
+            <div class="form-group">
+                <label for="serum_creatinine">SERUM_CREATININE:</label>
+                <input type="text" id="serum_creatinine" placeholder="serum_cre">
+            </div>
+            <div class="form-group">
+                <label for="potassium">POTASSIUM:</label>
+                <input type="text" id="potassium" placeholder="potassium">
+            </div>
+            <div class="form-group">
+                <label for="anaemia">ANAEMIA:</label>
+                <select id="anaemia">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+            <!-- Predict Button -->
+            <div class="form-group-button">
+                <button type="submit" id="predict-btn">Predict</button>
+            </div>
+        </form>
+    </main>
+    
+    <script src="data.js"></script>
+</body>
+</html>
